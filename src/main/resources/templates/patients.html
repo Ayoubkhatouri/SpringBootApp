@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="template1"
+>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
 </head>
 <body>
+<div layout:fragment="content1">
 <div class="container mt-2">
     <div class="card">
         <div class="card-header">Liste des patients</div>
@@ -50,6 +54,6 @@
         </div>
     </div>
 </div>
-
+</div>
 </body>
 </html>
